@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %} Login {% endblock title %}
+
+
+{% block content %}
+
+    <!-- <h1>This is a Login page</h1>
+    {{ text }} {{ user }}
+
+    {% if bul == Fasle %}
+        Yes is it True
+    {% else %}
+    No it is not True
+    {% endif %} -->
+
+    <div class="container mt-3 pt-3">
+        <h2 class="text-center">Login</h2>
+        <form>
+        <div class="mb-3">
+            <label for="Email" class="form-label">Email Address</label>
+            <input type="email" class="form-control" id="Email" name="Email" aria-describedby="emailHelp" placeholder="Enter Email">
+          </div>
+        <div class="mb-3">
+          <label for="Password" class="form-label">Password</label>
+          <input type="password" class="form-control" id="Password" name="Password" placeholder="Enter Password">
+        </div>
+        <button type="submit" class="btn btn-outline-success">Login</button>
+      </form>
+    </div>
+    
+
+
+{% endblock content %}
